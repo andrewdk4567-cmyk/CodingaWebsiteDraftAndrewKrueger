@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #084280;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: -webkit-linear-gradient(270deg,rgba(3,3,3,1.00) 31.09%,rgba(64,0,255,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(3,3,3,1.00) 31.09%,rgba(64,0,255,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(3,3,3,1.00) 31.09%,rgba(64,0,255,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(3,3,3,1.00) 31.09%,rgba(64,0,255,1.00) 100%);
+}
+
+
+nav {
+  background-color: #0040FF;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;            
+  margin: 0;
+  padding: 17px 24px;     
+  box-sizing: border-box; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #F0BCB9, #00000);
+    color: white;
+}
+
+h1 {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: #FFF700;
+}
+
+.intro-text {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.author {
+    font-style: italic;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #FFF700;
+    margin-bottom: 15px;
+	
+}
+
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+
+.pull-quote {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #FFFFFF;
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+    margin: 30px 0;
+}
+
+.section-bg {
+    padding: 40px 40px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.side-by-side {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;   
+  padding: 60px 40px;
+}
+
+.side-by-side .image-container,
+.side-by-side .text-container {
+  min-width: 0;         
+}
+#categories {
+  margin-bottom: 100px; 
+}
+
+
+#tips .left h3:first-of-type {
+  text-align: left;
+  margin-left: 40px; 
+}
+#tips h3 {
+  text-align: left;
+  margin-left: 80px; 
+}
+
+
+#tips p {
+  text-align: left;
+  margin-left: 80px;
+  margin-right: 80px; 
+}
+#tips h3:first-of-type {
+  margin-right: 100px; 
+}
+
+#tips h3:first-of-type + p {
+  margin-right: 100px; 
+}
+
+
+
+
+#tips .left p:first-of-type {
+  margin-left: 40px;
+  text-align: left;
+}
+
+
+#tips .tips-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; 
+  gap: 60px;
+}
+
+
+#tips .tips-columns .col {
+  flex: 1 1 0;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+
+#tips h3, 
+#tips p, 
+#tips figure, 
+#tips blockquote {
+  margin-bottom: 20px;
+}
+
+
+  #tips .tips-columns .col {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figcaption {
+  font-size: 14px;
+  color: black; 
+  margin-top: 5px;
+  font-style: italic;
+}
+#tips figure {
+  text-align: center;
+  margin: 10px auto;        
+}
+
+#tips figure img {
+  display: block;
+  margin: 0 auto;           
+}
+
+#tips figcaption {
+    margin-top: 9px;
+    color: #ccc;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+a {
+    color: #FFF700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #414032;
+
+
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(to right, #007bff, #00bfff);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    margin: 10px 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #007bff;
+    color: white;
+    margin-top: 60px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    color: #FFF700;
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+    color: #FFFFFF;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .multi-column {
+        column-count: 1;
+    }
+
+    .side-by-side {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+#tips .left h3:first-of-type,
+#tips .left h3:first-of-type + p {
+  margin-left: 80px !important;   
+  margin-right: 0 !important;     
+  text-align: left;
+}
+.video-container {
+  max-width: 90%;          
+  margin: 20px auto;       
+  text-align: left;
+}
+
+.video-container iframe {
+  width: 100%;             
+  aspect-ratio: 16 / 9;    
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+
+}
+
+#tips .col.right p:last-of-type {
+  margin-bottom: 0px; 
+}
+
+#tips .col.right figure {
+  margin-top: 0px; 
+  margin-bottom: 10px; 
+}
+
+#tips .col.right figure img {
+  margin-top: 0; 
+}
+
+#tips .col.right figcaption {
+  margin-top: 2px; 
+}
+#tips .col.left p,
+#tips .col.left h3,
+#tips .col.left figure {
+  margin-left: 80px;   
+  margin-right: 80px;  
+  text-align: left;
+}
+
+#tips .col.left figure {
+  margin-top: 15px;    
+  margin-bottom: 10px; 
+}
+
+#tips .col.left h3 + p {
+  margin-left: 80px !important;
+  margin-right: 80px !important;
+  max-width: calc(100% - 160px); 
+  text-align: left;
+}
+
+#tips .col.right {
+  margin-top: -8px; 
+}
+
+#tips .col.right h3,
+#tips .col.right p {
+  margin-left: 5px; 
+}
+
+#tips .col.right {
+  margin-top: 1px; 
+}
+html, body {
+  overflow-x: hidden; 
+  width: 100%; 
+}
+#categories h2,
+#categories h3,
+#categories p {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+
+html {
+  overflow-y: scroll;        
+  scrollbar-gutter: stable;  
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;        
+  width: 100%;
+}
+html {
+  overflow-y: scroll;           
+  scrollbar-gutter: stable;     
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-y: scroll; 
+  scrollbar-gutter: stable; 
+}
+
+body {
+  overflow-x: hidden; 
+}
+
